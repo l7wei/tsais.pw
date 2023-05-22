@@ -85,6 +85,39 @@
         }
       }
     </script>
+
+    <!-- Google Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Google Tag Manager
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Backkground Image
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <style>
+      body {
+        position: relative; /* 將body元素設定為相對定位，讓::before偽元素能夠正確定位 */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        var backgroundImages = [
+          "images/otters/otter-cat-1.gif",
+          "images/otters/otter-cat-2.gif",
+          "images/otters/otter-cat-3.gif",
+          "images/otters/otter-cat-4.gif",
+        ];
+
+        var randomIndex = Math.floor(Math.random() * backgroundImages.length);
+        var selectedImage = backgroundImages[randomIndex];
+
+        document.body.style.backgroundImage = "url(" + selectedImage + ")";
+      });
+    </script>
   </head>
 
   <body>
